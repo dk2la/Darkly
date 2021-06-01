@@ -30,6 +30,7 @@ just need inspect page where we have form with grade persons, after add new grad
 #####################admin sign in###########################################
 The flag is : d19b4823e0d5600ceed56d5e896ef328d7a2b9e7ac7e80f4fcdb9b10bcb3e7ff
 Admin page:
+in file robots.txt, have directory /whatever and /.hidden to this dir robots dont have access when verfy site
 just need open directory /whatever, in this directory have file htpasswd (autoindex on), need install this file, and take login: root, password:hash md5 (just convert, output convert == dragon), welcome 
 
 
