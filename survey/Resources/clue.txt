@@ -1,0 +1,2 @@
+Page: survey
+just need inspect page where we have form with grade persons, after add new grade with something else count, for example 111 and send this grade

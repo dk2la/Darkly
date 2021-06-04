@@ -1,0 +1,4 @@
+https://en.wikipedia.org/wiki/Referer_spoofing
+footer:
+	for find this flag, need open foobar link, after this inspect HTML, after open body html, and read big "funny" comment, where in last lines, tolds, use the referer "http://www.nsa.gov/" and browser (User-Agent HEADER http) "ft_bornToSec" and serd request:
+		curl -H "User-Agent: "ft_bornToSec"; Referer: "https://www.nsa.gov/"" http://192.168.99.107/\?page\=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c

@@ -1,0 +1,3 @@
+Admin page:
+in file robots.txt, have directory /whatever and /.hidden to this dir robots dont have access when verfy site
+just need open directory /whatever, in this directory have file htpasswd (autoindex on), need install this file, and take login: root, password:hash md5 (just convert, output convert == dragon), welcome 

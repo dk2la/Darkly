@@ -1,0 +1,3 @@
+Redirect:
+just need fix link in site redirect
+Inspect page 192.168.99.101, sidebare, where we have redirect link to instagram, facebook and twitter, next step change link to Google for example

