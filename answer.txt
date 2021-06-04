@@ -87,6 +87,14 @@ Upload:
 #########################.hidden file##################################################
 start parser.py
 ########################foobar###################################################
-
+The flag is : f2a29020ef3132e01dd61df97fd33ec8d7fcd1388cc9601e7db691d17d4d6188
+Foobar:
+	for find this flag, need open foobar link, after this inspect HTML, after open body html, and read big "funny" comment, where in last lines, tolds, use the referer "http://www.nsa.gov/" and browser (User-Agent HEADER http) "ft_bornToSec" and serd request:
+		curl -H "User-Agent: "ft_bornToSec"; Referer: "https://www.nsa.gov/"" http://192.168.99.107/\?page\=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c
 #######################media page###############################################
-
+THE FLAG IS : 928D819FC19405AE09921A2B71227BD9ABA106F9D2D37AC412E9E5A750F1506D
+Data URL:
+	insert string to page with help Data URL:
+	encrypt "<script>alert(1)</script>" to base64,
+	after take access to http://192.168.99.107/?page=media&src=nsa to this query requests need insert "data:...", cuz this page give text/html MIME type, we try take access to:
+	http://192.168.99.107/?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pgo=
